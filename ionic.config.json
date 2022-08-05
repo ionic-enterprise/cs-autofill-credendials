@@ -1,0 +1,7 @@
+{
+  "name": "cs-user-pass",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

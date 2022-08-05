@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="onSubmit()">
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">E-Mail Address</ion-label>
+        <ion-input appAutofill type="email" name="email" autocomplete="email" [(ngModel)]="email" required email>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input appAutofill type="password" name="password" autocomplete="current-password" [(ngModel)]="password"
+          required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Phone Number</ion-label>
+        <ion-input appAutofill type="tel" name="phone" autocomplete="tel" [(ngModel)]="phone"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button type="submit" [disabled]="!submitEnabled">Submit</ion-button>
+  </form>
+</ion-content>
